@@ -6,16 +6,21 @@ const util = require('util');
 
 
 function createNewNote(note, notesArray) {
-    notesArray.push(note);
+    const newNote = note;
+    notesArray.push(newNote);
     fs.writeFileSync(
         path.join(__dirname, 'db/db.json'),
-        JSON.stringify({ note: notesArray}, null, 2)
+        JSON.stringify({ newNote: notesArray}, null, 2)
     );
+    return newNote;
 }; 
 
+function findById(id, notesArray) {
+    const result = notesArray.filter((note) => note.id === id)[0];
+    return result;
+}
 
-
-function editNote() {
+function editNote(editedNote, notesArray) {
 
 };
 
@@ -27,4 +32,5 @@ function deleteNote() {
 
 module.exports = {
     createNewNote,
+    findById,
 }
