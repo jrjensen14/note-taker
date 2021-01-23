@@ -1,8 +1,9 @@
 const fs = require('fs');
 const util = require('util');
-
+const { v4: uuidv4 } = require('uuid');
 // package to generate unique ids
-
+const uniqueId = uuidv4();
+console.log(uniqueId);
 
 
 function createNewNote(note, notesArray) {

@@ -1,11 +1,11 @@
-const router = require('express').Router;
-const noteData = require('../db/notes');
+const router = require('express').Router();
+const notes = require('../db/notes');
 
 //API ROUTES: 
 // GET /api/notes should read the db.json file 
 // return all saved notes as JSON.
 router.get('/notes', (req, res) => {
-    res.json(noteData);
+    res.json(notes);
 });
 
 // POST /api/notes should receive a new note to save on the request body, 
@@ -13,9 +13,10 @@ router.get('/notes', (req, res) => {
 // and then return the new note to the client.
 // You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
 router.post('/notes', (req, res) => {
-    req.body = noteData.length.toString();
+    console.log("sample string");
+    req.body = notes;
 
-    res.json(noteData);
+    res.json(notes);
 })
 
 module.exports = router;

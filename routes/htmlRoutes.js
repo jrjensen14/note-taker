@@ -1,5 +1,5 @@
 const path = require('path');
-const router = require('express').Router;
+const router = require('express').Router();
 
 //HTML Routes needed:
 // GET /notes(should return notes.html file)
