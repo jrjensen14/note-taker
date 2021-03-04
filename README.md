@@ -13,8 +13,8 @@
   npm Express.js 
 
   ## Usage:
-  ![alt text](public/assets/Develop/note-taker-app screenshot-2.png)
-  <!-- ![alt text](public/assets/Develop/note-taker-app screenshot.png) -->
+  ![alt text](public/assets/develop/note-taker-app screenshot-2.png)
+  ![alt text](public/assets/develop/note-taker-app screenshot.png)
 
   ## Questions:
   If you have any questions please reach out to me at:
